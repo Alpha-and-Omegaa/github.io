@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Knyaz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="catalog-header">
+        <div class="logo">
+        <img src="https://i.ibb.co/pBjGPkHb/image-Photoroom-1.png" alt="Knyaz" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacts-section">
+        <h1>Контакты</h1>
+        
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>Контактная информация</h3>
+                <div class="contact-info">
+                    <p><i>📞</i> Телефон: +7 (928) 123-45-67</p>
+                    <p><i>✉️</i> Email: info@knyaz-knives.ru</p>
+                    <p><i>🕒</i> Часы работы: Пн-Пт 9:00-20:00, Сб-Вс 10:00-18:00</p>
+                </div>
+            </div>
+            
+            <div class="contact-card">
+                <h3>Реквизиты</h3>
+                <div class="contact-info">
+                    <p><i>🏢</i> ООО "Князь"</p>
+                    <p><i>🔢</i> ИНН: 1234567890</p>
+                    <p><i>🏦</i> ОГРН: 1234567890123</p>
+                </div>
+            </div>
+            
+            <div class="contact-card">
+                <h3>Адрес</h3>
+                <div class="contact-info">
+                    <p><i>📍</i> г. Нальчик, ул. Осетинская, д. 31, офис 22</p>
+                    <p><i>🚇</i> Ближайшее маршрутка: 22 (5 минут пешком)</p>
+                    <p><i>🚗</i> Парковка: бесплатная на территории</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="map-container">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        
+        <div class="contact-form">
+            <h2>Обратная связь</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Ваш email</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Тема сообщения</label>
+                    <select id="subject">
+                        <option>Вопрос о товаре</option>
+                        <option>Оформление заказа</option>
+                        <option>Возврат/обмен</option>
+                        <option>Сотрудничество</option>
+                        <option>Другое</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить сообщение</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Knyaz. Все права защищены.</p>
+            <p>Ножи - это инструменты, требующие ответственного обращения.</p>
+        </div>
+    </footer>
+</body>
+</html>
